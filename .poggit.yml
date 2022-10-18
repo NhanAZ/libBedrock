@@ -1,0 +1,10 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/nhanaz-pm-pl/libBedrock
+build-by-default: true
+branches:
+- master
+projects:
+  libBedrock:
+    path: ""
+    model: virion
+    type: library
+...
