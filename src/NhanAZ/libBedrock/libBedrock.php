@@ -7,6 +7,8 @@ namespace NhanAZ\libBedrock;
 use pocketmine\plugin\PluginBase;
 use pocketmine\scheduler\ClosureTask;
 use pocketmine\utils\Config;
+use pocketmine\network\mcpe\protocol\PlaySoundPacket;
+use pocketmine\player\Player;
 use function basename;
 use function explode;
 use function rename;
@@ -70,5 +72,17 @@ class libBedrock {
 			"configName" => $originalConfigName,
 			"oldConfigName" => $oldConfigName
 		];
+	}
+
+	/**
+	 * @param Player $player
+	 */
+	public static function playSound($player, string $soundName, bool $playSound = true): void {
+		if ($playSound) {
+			if ($player instanceof Player) {
+				$playerPos = $player->getPosition();
+				$player->getNetworkSession()->sendDataPacket(PlaySoundPacket::create($soundName, $playerPos->getX(), $playerPos->getY(), $playerPos->getZ(), 1, 1));
+			}
+		}
 	}
 }
