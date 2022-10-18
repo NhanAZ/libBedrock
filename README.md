@@ -18,7 +18,7 @@ projects:
   YourPlugin:
     libs:
       - src: NhanAZ/libBedrock/libBedrock
-        version: 0.0.1
+        version: 0.0.2
 ```
 
 # Contact
