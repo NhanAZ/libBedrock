@@ -3,7 +3,7 @@ Common features for PocketMine-MP plugins
 
 Integrate the virion itself into your plugin or you could also use it as a composer library by running the command below:
 
-`composer require NhanAZ/libbedrock`
+`composer require nhanaz/libbedrock`
 
 <!-- ## API documentation
 There's no documentation yet, but you can check out the [demo plugin](https://github.com/nhanaz-pm-pl/CustomJoinSound/) which shows how to use its API in a plugin. -->
@@ -18,7 +18,7 @@ projects:
   YourPlugin:
     libs:
       - src: NhanAZ/libBedrock/libBedrock
-        version: x.x.x
+        version: 0.0.4
 ```
 
 # Contact
