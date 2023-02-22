@@ -1,6 +1,6 @@
 ---
 name: libBedrock
-version: 0.0.5
+version: 0.0.6
 antigen: NhanAZ\libBedrock
 api: [4.0.0]
 authors: [NhanAZ]
