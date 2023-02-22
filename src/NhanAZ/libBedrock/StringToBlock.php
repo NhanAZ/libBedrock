@@ -6,13 +6,14 @@ namespace NhanAZ\libBedrock;
 
 use pocketmine\block\Block;
 use pocketmine\item\ItemBlock;
+use NhanAZ\libBedrock\libBedrockException;
 
 class StringToBlock {
 
 	public static function parse(string $string): Block {
 		$item = StringToItem::parse($string);
 		if (!$item instanceof ItemBlock) {
-			throw new \Exception("\"{$string}\" is not a block!");
+			throw new libBedrockException("\"{$string}\" is not a block!");
 		}
 		return $item->getBlock();
 	}

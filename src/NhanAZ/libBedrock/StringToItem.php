@@ -8,6 +8,7 @@ use pocketmine\item\Item;
 use pocketmine\item\LegacyStringToItemParser;
 use pocketmine\item\LegacyStringToItemParserException;
 use pocketmine\item\StringToItemParser;
+use NhanAZ\libBedrock\libBedrockException;
 
 class StringToItem {
 
@@ -18,7 +19,7 @@ class StringToItem {
 			throw new LegacyStringToItemParserException($e->getMessage());
 		}
 		if (!$item instanceof Item) {
-			throw new \Exception("\"{$string}\" is not a item!");
+			throw new libBedrockException("\"{$string}\" is not a item!");
 		}
 		return $item;
 	}
