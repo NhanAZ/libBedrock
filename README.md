@@ -1,5 +1,5 @@
 # libBedrock
-A library that provides common features for PocketMine-MP plugins.
+Common features for PocketMine-MP plugins
 
 Integrate the virion itself into your plugin or you could also use it as a composer library by running the command below:
 
