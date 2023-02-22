@@ -16,7 +16,7 @@ class StringToItem {
 		try {
 			$item = StringToItemParser::getInstance()->parse($string) ?? LegacyStringToItemParser::getInstance()->parse($string);
 		} catch (LegacyStringToItemParserException $e) {
-			throw new LegacyStringToItemParserException($e->getMessage());
+			throw new libBedrockException($e->getMessage());
 		}
 		if (!$item instanceof Item) {
 			throw new libBedrockException("\"{$string}\" is not a item!");
