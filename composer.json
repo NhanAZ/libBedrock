@@ -3,7 +3,6 @@
     "type": "library",
     "description": "Common features for PocketMine-MP plugins",
     "license": "MIT",
-    "minimum-stability": "dev",
     "require": {
         "pocketmine/pocketmine-mp": "4.15.1"
     },
