@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-0": {
-            "nhanaz\\libBedrock\\": "src/"
+            "NhanAZ\\libBedrock\\": "src/"
         }
     }
 }
