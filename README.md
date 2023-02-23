@@ -5,8 +5,8 @@ Integrate the virion itself into your plugin or you could also use it as a compo
 
 `composer require nhanaz/libbedrock 0.0.6`
 
-<!-- ## API documentation
-There's no documentation yet, but you can check out the [demo plugin](https://github.com/nhanaz-pm-pl/CustomJoinSound/) which shows how to use its API in a plugin. -->
+## API documentation
+https://github.com/NhanAZ/libBedrock/blob/master/assets/docs.md
 
 ## Including in other plugins
 This library supports being included as a [virion](https://github.com/poggit/support/blob/master/virion.md).
