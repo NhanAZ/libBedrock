@@ -24,4 +24,6 @@ class Jwt {
 	public function getx5u(): string {
 		return strval($this->clientData[0]["x5u"]);
 	}
+
+	// TODO: AnimatedImageData
 }
