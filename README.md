@@ -3,7 +3,7 @@ Common features for PocketMine-MP plugins
 
 Integrate the virion itself into your plugin or you could also use it as a composer library by running the command below:
 
-`composer require nhanaz/libbedrock 0.0.6`
+`composer require nhanaz/libbedrock 0.0.8`
 
 ## API documentation
 https://github.com/NhanAZ/libBedrock/blob/master/assets/docs.md
@@ -18,7 +18,7 @@ projects:
   YourPlugin:
     libs:
       - src: NhanAZ/libBedrock/libBedrock
-        version: 0.0.6
+        version: 0.0.8
 ```
 
 # Contact
