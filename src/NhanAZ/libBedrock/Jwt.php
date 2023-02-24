@@ -26,4 +26,8 @@ class Jwt {
 	}
 
 	// TODO: AnimatedImageData
+
+	public function getArmSize(): string {
+		return strval($this->clientData[1]["ArmSize"]);
+	}
 }
