@@ -20,4 +20,8 @@ class Jwt {
 	public function getalg(): string {
 		return strval($this->clientData[0]["alg"]);
 	}
+
+	public function getx5u(): string {
+		return strval($this->clientData[0]["x5u"]);
+	}
 }
