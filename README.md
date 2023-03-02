@@ -14,11 +14,18 @@ This library supports being included as a [virion](https://github.com/poggit/sup
 If you use [Poggit](https://poggit.pmmp.io) to build your plugin, you can add it to your `.poggit.yml` like so:
 
 ```yml
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/YourGithubUserName/YourPluginName
+build-by-default: true
+branches:
+- master
 projects:
-  YourPlugin:
+  YourPluginName:
+    path: ""
     libs:
       - src: NhanAZ/libBedrock/libBedrock
         version: 0.0.8
+...
+
 ```
 
 # Contact
