@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NhanAZ\BetterCancel;
+namespace NhanAZ\libBedrock;
 
 use pocketmine\math\Vector3;
 
