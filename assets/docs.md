@@ -49,3 +49,11 @@ public function onRecieve(DataPacketReceiveEvent $event): void {
 	}
 }
 ```
+
+#### `BedrockMath::Center()` - Center a vector (Just add 0.5, 0.5, 0.5 to vector)
+```php
+use NhanAZ\libBedrock\BedrockMath;
+
+$world->addParticle(BedrockMath::Center($position), new Particle());
+# See more in: https://github.com/nhanaz-pm-pl/BetterCancel
+```
