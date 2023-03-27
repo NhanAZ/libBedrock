@@ -23,7 +23,7 @@ projects:
     path: ""
     libs:
       - src: NhanAZ/libBedrock/libBedrock
-        version: 0.0.9
+        version: 0.0.10
 ...
 
 ```
