@@ -50,10 +50,24 @@ public function onRecieve(DataPacketReceiveEvent $event): void {
 }
 ```
 
-#### `BedrockMath::Center()` - Center a vector (Just add 0.5, 0.5, 0.5 to vector)
+#### `BedrockMath::Center()`
+This method is used to calculate the center of a Vector3 by adding the values 0.5 to the elements of the vector. For example, if you have a vector with 3 elements (x, y, z) by adding 0.5 to these elements you will get a new vector with elements (x + 0.5, y + 0.5, z + 0.5).
+
+This has meaning because when you calculate the center of a Vector3, you want to return a value closest to the center of the vector. By adding 0.5 to each element of the vector, you will get the result closest to the center of the vector.
+
+See demo in: https://github.com/nhanaz-pm-pl/BetterCancel
+
+Here is an example of how this method can be used:
+
 ```php
 use NhanAZ\libBedrock\BedrockMath;
 
-$world->addParticle(BedrockMath::Center($position), new Particle());
-# See more in: https://github.com/nhanaz-pm-pl/BetterCancel
+// Create a Vector3 with the values (10, 20, 30)
+$vector = new Vector3(10, 20, 30);
+
+// Calculate the center of the vector
+$center = BedrockMath::Center($vector);
+
+// Print the result
+echo $center; // Output: (10.5, 20.5, 30.5)
 ```
