@@ -10,8 +10,12 @@
         "phpstan/phpstan": "1.8.9"
     },
     "autoload": {
-        "psr-0": {
-            "NhanAZ\\libBedrock\\": "src/"
+        "classmap": ["src"]
+    },
+    "extra": {
+        "virion": {
+            "spec": "3.0",
+            "namespace-root": "NhanAZ\\libBedrock"
         }
     }
 }
