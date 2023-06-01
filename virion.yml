@@ -2,7 +2,7 @@
 name: libBedrock
 version: 0.0.10
 antigen: NhanAZ\libBedrock
-api: [4.0.0]
+api: [5.0.0]
 authors: [NhanAZ]
 description: Common features for PocketMine-MP plugins
 ...
