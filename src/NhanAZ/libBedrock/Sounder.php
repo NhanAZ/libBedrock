@@ -9,7 +9,7 @@ use pocketmine\player\Player;
 
 class Sounder {
 
-	public static function play(Player $player, string $soundName, ?float $x = null, ?float $y = null, ?float $z = null, float $volume = 1.0, float $pitch = 1.0): void {
+	public static function play(Player $player, string $soundName, ?float $x = null, ?float $y = null, ?float $z = null, float $volume = 1.0, float $pitch = 1.0) : void {
 		$playerPos = $player->getPosition();
 		$player->getNetworkSession()->sendDataPacket(
 			PlaySoundPacket::create(

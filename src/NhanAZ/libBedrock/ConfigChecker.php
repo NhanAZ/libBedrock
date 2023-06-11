@@ -4,16 +4,24 @@ declare(strict_types=1);
 
 namespace NhanAZ\libBedrock;
 
+use NhanAZ\libBedrock\exception\libBedrockUnexpectedValueException;
 use pocketmine\plugin\PluginBase;
 use pocketmine\scheduler\ClosureTask;
 use pocketmine\utils\Config;
+use function basename;
+use function explode;
+use function is_string;
+use function rename;
+use function str_replace;
+use function trim;
+use function version_compare;
 
 class ConfigChecker {
 
 	/**
 	 * @return array<string>
 	 */
-	private static function getConfigData(Config $config): array {
+	private static function getConfigData(Config $config) : array {
 		$configPath = $config->getPath();
 		$configData = explode(".", basename($configPath));
 
@@ -34,8 +42,12 @@ class ConfigChecker {
 		];
 	}
 
-	public static function checkConfigVersion(PluginBase $plugin, Config $config, string $configKey, string $latestVersion, string $updateMessage = ""): bool {
-		if (($config->exists($configKey)) && !version_compare(strval($config->get($configKey)), $latestVersion, "<>")) {
+	public static function checkConfigVersion(PluginBase $plugin, Config $config, string $configKey, string $latestVersion, string $updateMessage = "") : bool {
+		$configKey = $config->get($configKey);
+		if (!is_string($configKey)) {
+			throw new libBedrockUnexpectedValueException('Parameter #3 $configKey of method NhanAZ\libBedrock\ConfigChecker::checkConfigVersion() expects string, mixed given.');
+		}
+		if (($config->exists($configKey)) && !version_compare($configKey, $latestVersion, "<>")) {
 			return false;
 		}
 		$configData = self::getConfigData($config);
@@ -48,7 +60,7 @@ class ConfigChecker {
 		rename($configPath . $originalConfig, $configPath . $oldConfig);
 		$plugin->saveDefaultConfig();
 		$plugin->getConfig()->reload();
-		$task = new ClosureTask(function () use ($plugin, $updateMessage): void {
+		$task = new ClosureTask(function () use ($plugin, $updateMessage) : void {
 			$plugin->getLogger()->critical($updateMessage);
 		});
 		$plugin->getScheduler()->scheduleDelayedTask($task, 3 * 20);

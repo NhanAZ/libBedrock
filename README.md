@@ -5,9 +5,6 @@ Integrate the virion itself into your plugin or you could also use it as a compo
 
 `composer require nhanaz/libbedrock`
 
-## API documentation
-https://github.com/NhanAZ/libBedrock/blob/master/assets/docs.md
-
 ## Including in other plugins
 This library supports being included as a [virion](https://github.com/poggit/support/blob/master/virion.md).
 
