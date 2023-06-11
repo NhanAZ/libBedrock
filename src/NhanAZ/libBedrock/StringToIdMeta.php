@@ -1108,6 +1108,12 @@ class StringToIdMeta {
 	 * @throws libBedrockUnexpectedValueException If the string cannot be parsed.
 	 */
 	public static function parse(string $string) : array {
+		$string = preg_replace('/tags:.*/', '', $string);
+		if (!is_string($string)) {
+			throw new libBedrockUnexpectedValueException();
+		}
+		$string = str_replace("x30", "x1", $string);
+		$string = rtrim($string);
 		$idMeta = constant($string);
 		if (!is_string($idMeta)) {
 			throw new libBedrockUnexpectedValueException();
