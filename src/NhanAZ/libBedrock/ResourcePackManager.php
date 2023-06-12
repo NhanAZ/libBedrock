@@ -52,7 +52,6 @@ class ResourcePackManager {
 		$reflection = new \ReflectionClass($manager);
 
 		$property = $reflection->getProperty("resourcePacks");
-		$property->setAccessible(true);
 		$currentResourcePacks = $property->getValue($manager);
 		if (!is_array($currentResourcePacks)) {
 			throw new libBedrockUnexpectedValueException();
@@ -61,7 +60,6 @@ class ResourcePackManager {
 		$property->setValue($manager, $currentResourcePacks);
 
 		$property = $reflection->getProperty("uuidList");
-		$property->setAccessible(true);
 		$currentUUIDPacks = $property->getValue($manager);
 		if (!is_array($currentUUIDPacks)) {
 			throw new libBedrockUnexpectedValueException();
@@ -70,7 +68,6 @@ class ResourcePackManager {
 		$property->setValue($manager, $currentUUIDPacks);
 
 		$property = $reflection->getProperty("serverForceResources");
-		$property->setAccessible(true);
 		$property->setValue($manager, true);
 
 		$plugin->getLogger()->debug('Resource pack registered');
@@ -83,7 +80,6 @@ class ResourcePackManager {
 		$reflection = new \ReflectionClass($manager);
 
 		$property = $reflection->getProperty("resourcePacks");
-		$property->setAccessible(true);
 		$currentResourcePacks = $property->getValue($manager);
 		if (!is_array($currentResourcePacks)) {
 			throw new libBedrockUnexpectedValueException();
@@ -96,7 +92,6 @@ class ResourcePackManager {
 		}
 
 		$property = $reflection->getProperty("uuidList");
-		$property->setAccessible(true);
 		$currentUUIDPacks = $property->getValue($manager);
 
 		if (is_null($pack)) {
