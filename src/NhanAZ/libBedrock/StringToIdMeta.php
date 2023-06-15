@@ -1118,7 +1118,8 @@ class StringToIdMeta {
 		if (!is_string($string)) {
 			throw new libBedrockUnexpectedValueException();
 		}
-		$string = str_replace("x30", "x1", $string);
+		$string = rtrim($string);
+		$string = substr($string, 0, -2) . "1";
 		$string = rtrim($string);
 		$idMeta = constant($string);
 		if (!is_string($idMeta)) {
