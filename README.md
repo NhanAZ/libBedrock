@@ -19,8 +19,9 @@
 - [API documentation](#api-documentation)
 - [How to contact me?](#how-to-contact-me)
 - [How do I contribute to libBedrock?](#how-do-i-contribute-to-libbedrock)
-- [Credits](#credits)
+- [Donate](#donate]
 - [Licensing information](https://github.com/NhanAZ/libBedrock/edit/master/README.md#licensing-information)
+- [Credits](#credits)
 
 </details>
 
@@ -61,6 +62,12 @@ Before you participate in our community, please read the [Code of Conduct](https
 
 See [Contributing](https://github.com/NhanAZ/libBedrock/blob/master/CONTRIBUTING.md) for more details.
 
+## Donate
+- [PayPal](https://www.paypal.com/paypalme/NhanAZ)
+
+## Licensing information
+This project is licensed under MIT. Please see the [LICENSE](/LICENSE) file for details.
+
 ## Credits
 <details>
 
@@ -71,6 +78,7 @@ See [Contributing](https://github.com/NhanAZ/libBedrock/blob/master/CONTRIBUTING
 	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/StringToItem.php
 	- https://github.com/NhanAZ/libBedrock/blob/master/SECURITY.md
 	- https://github.com/NhanAZ/libBedrock/blob/master/.github/PULL_REQUEST_TEMPLATE.md
+	- https://github.com/NhanAZ/libBedrock/blob/master/README.md
 - [thebigcrafter/ktpmpl-cfs](https://github.com/thebigcrafter/ktpmpl-cfs)
 	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/ConfigChecker.php
 - [jasonw4331/libCustomPack](https://github.com/jasonw4331/libCustomPack)
@@ -84,9 +92,3 @@ See [Contributing](https://github.com/NhanAZ/libBedrock/blob/master/CONTRIBUTING
 - [PhpStorm](https://www.jetbrains.com/phpstorm/)
 
 </details>
-
-## Donate
-- [PayPal](https://www.paypal.com/paypalme/NhanAZ)
-
-## Licensing information
-This project is licensed under MIT. Please see the [LICENSE](/LICENSE) file for details.
