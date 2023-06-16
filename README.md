@@ -72,6 +72,10 @@ See [Contributing](https://github.com/NhanAZ/libBedrock/blob/master/CONTRIBUTING
 	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/ConfigChecker.php
 - [jasonw4331/libCustomPack](https://github.com/jasonw4331/libCustomPack)
 	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/ResourcePackManager.php
+- [PHPStan](https://github.com/phpstan/phpstan)
+- [PHP Coding Standards Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [PhpStorm](https://www.jetbrains.com/phpstorm/)
 
 </details>
 
