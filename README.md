@@ -59,9 +59,9 @@ There's no documentation yet, but you can check out the [demo plugin](https://gi
 You can contact me directly via Discord `NhanAZ` (Originally known as `NhanAZ#9115`), ping `@NhanAZ` in Discord https://discord.gg/j2X83ujT6c, email to `nhanaz@duck.com`.
 
 ## How do I contribute to libBedrock?
-Before you participate in our community, please read the [Code of Conduct](https://github.com/NhanAZ/libBedrock/blob/main/CODE_OF_CONDUCT.md).
+Before you participate in our community, please read the [Code of Conduct](https://github.com/NhanAZ/libBedrock/blob/master/CODE_OF_CONDUCT.md).
 
-See [Contributing](https://github.com/NhanAZ/libBedrock/blob/main/CONTRIBUTING.md) for more details.
+See [Contributing](https://github.com/NhanAZ/libBedrock/blob/master/CONTRIBUTING.md) for more details.
 
 ## Licensing information
 This project is licensed under MIT. Please see the [LICENSE](/LICENSE) file for details.
