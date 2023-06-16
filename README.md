@@ -1,11 +1,24 @@
-# libBedrock
-Common features for PocketMine-MP plugins
+<p align="center">
+	<a href="https://github.com/NhanAZ/libBedrock">
+			<img height="76" src="https://github.com/NhanAZ/libBedrock/blob/master/assets/libBedrock_Icon.png" loading="eager" />
+	</a><br>
+	<b>A library that provides common features for the PocketMine-MP plugin</b>
+</p>
 
+<p align="center">
+	<a href="https://github.com/NhanAZ/libBedrock/actions/workflows/phpstan.yml/badge.svg" alt="CI" /></a>
+	<a href="https://github.com/NhanAZ/libBedrock/releases/latest"><img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/NhanAZ/libBedrock?label=release&sort=semver"></a>
+	<a href="https://discord.gg/j2X83ujT6c"><img src="https://img.shields.io/discord/986553214889517088?label=discord&color=7289DA&logo=discord" alt="Discord" /></a>
+	<br>
+	<a href="https://github.com/NhanAZ/libBedrock/releases"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/NhanAZ/libBedrock/total?label=downloads%40total"></a>
+	<a href="https://github.com/NhanAZ/libBedrock/releases/latest"><img alt="GitHub release (latest by SemVer)" src="https://img.shields.io/github/downloads/NhanAZ/libBedrock/latest/total?sort=semver"></a>
+</p>
+
+## Including in other plugins
 Integrate the virion itself into your plugin or you could also use it as a composer library by running the command below:
 
 `composer require nhanaz/libbedrock`
 
-## Including in other plugins
 This library supports being included as a [virion](https://github.com/poggit/support/blob/master/virion.md).
 
 If you use [Poggit](https://poggit.pmmp.io) to build your plugin, you can add it to your `.poggit.yml` like so:
