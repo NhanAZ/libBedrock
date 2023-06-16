@@ -19,7 +19,7 @@ class StringToBlock {
 	 *
 	 * @throws libBedrockException if the string does not represent a valid block.
 	 */
-	public static function parse(string $string): Block {
+	public static function parse(string $string) : Block {
 		$item = StringToItem::parse($string);
 		if (!$item instanceof ItemBlock) {
 			throw new libBedrockException("\"{$string}\" is not a block!");

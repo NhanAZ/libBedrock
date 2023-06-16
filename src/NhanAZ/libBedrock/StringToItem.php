@@ -21,7 +21,7 @@ class StringToItem {
 	 *
 	 * @throws libBedrockException if the string does not represent a valid item.
 	 */
-	public static function parse(string $string): Item {
+	public static function parse(string $string) : Item {
 		try {
 			$item = StringToItemParser::getInstance()->parse($string) ?? LegacyStringToItemParser::getInstance()->parse($string);
 		} catch (LegacyStringToItemParserException $e) {
