@@ -11,7 +11,7 @@ use function explode;
 use function is_string;
 use function preg_replace;
 use function rtrim;
-use function str_replace;
+use function substr;
 
 define('Item Blast Furnace (-10051:0)x1', '-214:0');
 define('Item Cauldron (-10670:0)x1', '-210:0');
