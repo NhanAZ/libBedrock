@@ -22,6 +22,7 @@
 - [API documentation](#api-documentation)
 - [How to contact me?](#how-to-contact-me)
 - [How do I contribute to libBedrock?](#how-do-i-contribute-to-libbedrock)
+- [Credits](#credits)
 - [Licensing information](https://github.com/NhanAZ/libBedrock/edit/master/README.md#licensing-information)
 
 </details>
@@ -62,6 +63,20 @@ You can contact me directly via Discord `NhanAZ` (Originally known as `NhanAZ#91
 Before you participate in our community, please read the [Code of Conduct](https://github.com/NhanAZ/libBedrock/blob/master/CODE_OF_CONDUCT.md).
 
 See [Contributing](https://github.com/NhanAZ/libBedrock/blob/master/CONTRIBUTING.md) for more details.
+
+## Credits
+<details>
+
+<summary>Details</summary>
+
+- [pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP)
+	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/StringToItem.php
+- [thebigcrafter/ktpmpl-cfs](https://github.com/thebigcrafter/ktpmpl-cfs)
+	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/ConfigChecker.php
+- [jasonw4331/libCustomPack](https://github.com/jasonw4331/libCustomPack)
+	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/ResourcePackManager.php
+
+</details>
 
 ## Licensing information
 This project is licensed under MIT. Please see the [LICENSE](/LICENSE) file for details.
