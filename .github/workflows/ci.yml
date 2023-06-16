@@ -6,32 +6,60 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  phpstan:
     name: PHPStan analysis
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.image }}
     strategy:
       fail-fast: false
       matrix:
+        image: [ubuntu-latest]
         php: ["8.1", "8.2"]
 
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@2.25.4
+      - name: Setup PHP 🐘
+        uses: pmmp/setup-php-action@2.0.0
         with:
           php-version: ${{ matrix.php }}
+          install-path: "./bin"
+          pm-version-major: "5"
 
-      - name: Restore Composer package cache
+      - name: Get Composer cache directory 📁
         id: composer-cache
+        run: |
+          echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+      - name: Cache dependencies 📦
         uses: actions/cache@v3
         with:
-          path: "~/.cache/composer"
-          key: "php-${{ matrix.php }}-composer-${{ hashFiles('**/composer.json') }}"
-          restore-keys: "php-${{ matrix.php }}-composer-"
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-
 
-      - name: Install PHPStan Composer dependencies
-        run: composer install --prefer-dist --no-interaction --ignore-platform-reqs
+      - name: Install dependencies ⬇️
+        run: composer install --prefer-dist
 
-      - name: Run PHPStan
-        run: vendor/bin/phpstan analyze
+      - name: Run PHPStan 🔍
+        run: composer run-script analyse
+
+  codestyle:
+    name: Code Style checks
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup PHP 🐘
+        uses: shivammathur/setup-php@2.25.2
+        with:
+          php-version: 8.1
+          tools: php-cs-fixer
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run PHP-CS-Fixer 🔍
+        run: php-cs-fixer fix --dry-run --ansi --diff
