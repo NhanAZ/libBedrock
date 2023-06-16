@@ -14,6 +14,20 @@
 	<a href="https://github.com/NhanAZ/libBedrock/releases/latest"><img alt="GitHub release (latest by SemVer)" src="https://img.shields.io/github/downloads/NhanAZ/libBedrock/latest/total?sort=semver"></a>
 </p>
 
+<details>
+
+<summary>Table of Contents</summary>
+
+- [Including in other plugins](#including-in-other-plugins)
+- [API documentation](#api-documentation)
+- [Contact](#contact)
+- [How do I contribute to libBedrock?](#how-do-i-contribute-to-libbedrock)
+- [Licensing information](https://github.com/NhanAZ/libBedrock/edit/master/README.md#licensing-information)
+
+</details>
+
+---
+
 ## Including in other plugins
 Integrate the virion itself into your plugin or you could also use it as a composer library by running the command below:
 
@@ -41,5 +55,13 @@ projects:
 ## API documentation
 There's no documentation yet, but you can check out the [demo plugin](https://github.com/search?q=org%3Anhanaz-pm-pl%20libBedrock&type=code)/[dependency graph](https://github.com/NhanAZ/libBedrock/network/dependents) which shows how to use its API in a plugin or read the PHPDocs written in the code.
 
-# Contact
-You can contact me directly via Discord `NhanAZ` (Originally known as `NhanAZ#9115`) or ping `@NhanAZ` in Discord https://discord.gg/j2X83ujT6c
+## How to contact me?
+You can contact me directly via Discord `NhanAZ` (Originally known as `NhanAZ#9115`), ping `@NhanAZ` in Discord https://discord.gg/j2X83ujT6c, email to `nhanaz@duck.com`.
+
+## How do I contribute to libBedrock?
+Before you participate in our community, please read the [Code of Conduct](https://github.com/NhanAZ/libBedrock/blob/main/CODE_OF_CONDUCT.md).
+
+See [Contributing](https://github.com/NhanAZ/libBedrock/blob/main/CONTRIBUTING.md) for more details.
+
+## Licensing information
+This project is licensed under MIT. Please see the [LICENSE](/LICENSE) file for details.
