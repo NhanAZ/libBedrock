@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-	<a href="https://github.com/NhanAZ/libBedrock/actions/workflows/phpstan.yml/badge.svg" alt="CI" /></a>
+	<a href="https://github.com/NhanAZ/libBedrock/actions/workflows/main.yml"><img src="https://github.com/NhanAZ/libBedrock/actions/workflows/phpstan.yml/badge.svg" alt="CI" /></a>
 	<a href="https://github.com/NhanAZ/libBedrock/releases/latest"><img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/NhanAZ/libBedrock?label=release&sort=semver"></a>
 	<a href="https://discord.gg/j2X83ujT6c"><img src="https://img.shields.io/discord/986553214889517088?label=discord&color=7289DA&logo=discord" alt="Discord" /></a>
 	<br>
