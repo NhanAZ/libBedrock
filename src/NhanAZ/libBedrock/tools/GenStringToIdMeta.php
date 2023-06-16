@@ -35,6 +35,9 @@ use function constant;
 use function define;
 use function explode;
 use function is_string;
+use function preg_replace;
+use function rtrim;
+use function substr;
 
 EOF;
 		fwrite($file, $data . "\n");

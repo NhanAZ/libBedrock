@@ -12,7 +12,16 @@ use pocketmine\item\StringToItemParser;
 
 class StringToItem {
 
-	public static function parse(string $string) : Item {
+	/**
+	 * Converts a string to an item.
+	 *
+	 * @param string $string The string to convert.
+	 *
+	 * @return Item The item represented by the string.
+	 *
+	 * @throws libBedrockException if the string does not represent a valid item.
+	 */
+	public static function parse(string $string): Item {
 		try {
 			$item = StringToItemParser::getInstance()->parse($string) ?? LegacyStringToItemParser::getInstance()->parse($string);
 		} catch (LegacyStringToItemParserException $e) {
