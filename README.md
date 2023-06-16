@@ -2,7 +2,7 @@
 	<a href="https://github.com/NhanAZ/libBedrock">
 			<img height="76" src="https://github.com/NhanAZ/libBedrock/blob/master/assets/libBedrock_Icon.png" loading="eager" />
 	</a><br>
-	<b>A library that provides common features for the PocketMine-MP plugin</b>
+	<b>🌈 A library that provides common features for the PocketMine-MP plugin.</b>
 </p>
 
 <p align="center">
