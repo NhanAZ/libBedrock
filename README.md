@@ -20,7 +20,7 @@
 
 - [Including in other plugins](#including-in-other-plugins)
 - [API documentation](#api-documentation)
-- [Contact](#contact)
+- [How to contact me?](#how-to-contact-me)
 - [How do I contribute to libBedrock?](#how-do-i-contribute-to-libbedrock)
 - [Licensing information](https://github.com/NhanAZ/libBedrock/edit/master/README.md#licensing-information)
 
