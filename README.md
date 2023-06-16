@@ -38,5 +38,8 @@ projects:
 
 ```
 
+## API documentation
+There's no documentation yet, but you can check out the [demo plugin](https://github.com/search?q=org%3Anhanaz-pm-pl%20libBedrock&type=code)/[dependency graph](https://github.com/NhanAZ/libBedrock/network/dependents) which shows how to use its API in a plugin or read the PHPDocs written in the code.
+
 # Contact
 You can contact me directly via Discord `NhanAZ` (Originally known as `NhanAZ#9115`) or ping `@NhanAZ` in Discord https://discord.gg/j2X83ujT6c
