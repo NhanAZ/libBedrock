@@ -84,5 +84,8 @@ See [Contributing](https://github.com/NhanAZ/libBedrock/blob/master/CONTRIBUTING
 
 </details>
 
+## Donate
+- [PayPal](https://www.paypal.com/paypalme/NhanAZ)
+
 ## Licensing information
 This project is licensed under MIT. Please see the [LICENSE](/LICENSE) file for details.
