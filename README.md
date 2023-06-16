@@ -66,6 +66,7 @@ See [Contributing](https://github.com/NhanAZ/libBedrock/blob/master/CONTRIBUTING
 
 <summary>Details</summary>
 
+- [Contributors](https://github.com/NhanAZ/libBedrock/graphs/contributors)
 - [pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP)
 	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/StringToItem.php
 	- https://github.com/NhanAZ/libBedrock/blob/master/SECURITY.md
