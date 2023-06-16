@@ -68,10 +68,15 @@ See [Contributing](https://github.com/NhanAZ/libBedrock/blob/master/CONTRIBUTING
 
 - [pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP)
 	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/StringToItem.php
+	- https://github.com/NhanAZ/libBedrock/blob/master/SECURITY.md
+	- https://github.com/NhanAZ/libBedrock/blob/master/.github/PULL_REQUEST_TEMPLATE.md
 - [thebigcrafter/ktpmpl-cfs](https://github.com/thebigcrafter/ktpmpl-cfs)
 	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/ConfigChecker.php
 - [jasonw4331/libCustomPack](https://github.com/jasonw4331/libCustomPack)
 	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/ResourcePackManager.php
+- [thebigcrafter/oh-my-pmmp](https://github.com/thebigcrafter/oh-my-pmmp)
+	https://github.com/NhanAZ/libBedrock/blob/master/.github/workflows/ci.yml
+	
 - [PHPStan](https://github.com/phpstan/phpstan)
 - [PHP Coding Standards Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer)
 - [Visual Studio Code](https://code.visualstudio.com/)
