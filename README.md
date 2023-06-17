@@ -84,7 +84,7 @@ This project is licensed under MIT. Please see the [LICENSE](/LICENSE) file for 
 - [jasonw4331/libCustomPack](https://github.com/jasonw4331/libCustomPack)
 	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/ResourcePackManager.php
 - [thebigcrafter/oh-my-pmmp](https://github.com/thebigcrafter/oh-my-pmmp)
-	https://github.com/NhanAZ/libBedrock/blob/master/.github/workflows/ci.yml
+	- https://github.com/NhanAZ/libBedrock/blob/master/.github/workflows/ci.yml
 	
 - [PHPStan](https://github.com/phpstan/phpstan)
 - [PHP Coding Standards Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer)
