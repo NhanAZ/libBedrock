@@ -19,7 +19,7 @@
 - [API documentation](#api-documentation)
 - [How to contact me?](#how-to-contact-me)
 - [How do I contribute to libBedrock?](#how-do-i-contribute-to-libbedrock)
-- [Donate](#donate]
+- [Donate](#donate)
 - [Licensing information](https://github.com/NhanAZ/libBedrock/edit/master/README.md#licensing-information)
 - [Credits](#credits)
 
