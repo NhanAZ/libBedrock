@@ -23,7 +23,7 @@ class ResourcePackManager {
 
 	private static ?ResourcePack $pack = null;
 
-	public static function registerResourcePack(PluginBase $plugin, $encryptKey = "") : void {
+	public static function registerResourcePack(PluginBase $plugin, string $encryptKey = "") : void {
 		$plugin->getLogger()->debug('Compiling resource pack');
 		$zip = new \ZipArchive();
 		$zip->open(Path::join($plugin->getDataFolder(), $plugin->getName() . '.mcpack'), \ZipArchive::CREATE | \ZipArchive::OVERWRITE);
