@@ -23,7 +23,7 @@ class ResourcePackManager {
 
 	private static ?ResourcePack $pack = null;
 
-	public static function registerResourcePack(PluginBase $plugin) : void {
+	public static function registerResourcePack(PluginBase $plugin, $encryptKey = "") : void {
 		$plugin->getLogger()->debug('Compiling resource pack');
 		$zip = new \ZipArchive();
 		$zip->open(Path::join($plugin->getDataFolder(), $plugin->getName() . '.mcpack'), \ZipArchive::CREATE | \ZipArchive::OVERWRITE);
@@ -47,6 +47,7 @@ class ResourcePackManager {
 		$plugin->getLogger()->debug('Registering resource pack');
 		$plugin->getLogger()->debug('Resource pack compiled');
 		self::$pack = $pack = new ZippedResourcePack(Path::join($plugin->getDataFolder(), $plugin->getName() . '.mcpack'));
+		$packId = $pack->getPackId();
 		$manager = $plugin->getServer()->getResourcePackManager();
 
 		$reflection = new \ReflectionClass($manager);
@@ -69,6 +70,10 @@ class ResourcePackManager {
 
 		$property = $reflection->getProperty("serverForceResources");
 		$property->setValue($manager, true);
+
+		if ($encryptKey !== "") {
+			$manager->setPackEncryptionKey($packId, $encryptKey);
+		}
 
 		$plugin->getLogger()->debug('Resource pack registered');
 	}
