@@ -4,11 +4,11 @@
     "description": "Common features for PocketMine-MP plugins",
     "license": "MIT",
     "require": {
-        "pocketmine/pocketmine-mp": "5.0.0"
+        "pocketmine/pocketmine-mp": "^5.0.0"
     },
     "require-dev": {
-        "phpstan/phpstan": "1.10.18",
-        "friendsofphp/php-cs-fixer": "3.17.0"
+        "phpstan/phpstan": "^1.10.18",
+        "friendsofphp/php-cs-fixer": "^3.17.0"
     },
     "autoload": {
         "classmap": [
