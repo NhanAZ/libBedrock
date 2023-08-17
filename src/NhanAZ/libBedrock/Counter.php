@@ -15,13 +15,13 @@ use function strlen;
 class Counter {
 
 	/**
-	 * Get file information for all files in a directory with a given extension.
+	 * Get folder information for all files in a directory with a given extension.
 	 *
 	 * @param string $dir       The directory to scan.
 	 * @param string $extension The file extension to filter by.
 	 * @return array{"totalFiles": int, "totalLines": int, "totalWords": int, "totalChars": int} An array of file information.
 	 */
-	public static function getFileInfo(string $dir, string $extension) : array {
+	public static function getFolderInfo(string $dir, string $extension) : array {
 		$files = new \RecursiveIteratorIterator(
 			iterator: new \RecursiveDirectoryIterator($dir),
 			mode: \RecursiveIteratorIterator::CHILD_FIRST
