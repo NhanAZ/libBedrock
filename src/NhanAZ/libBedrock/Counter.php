@@ -6,14 +6,15 @@ namespace NhanAZ\libBedrock;
 
 use pocketmine\plugin\PluginBase;
 use Symfony\Component\Finder\SplFileInfo;
+use vennv\vapm\Async;
 use vennv\vapm\Error;
 use vennv\vapm\FiberManager;
-use vennv\vapm\Async;
 use vennv\vapm\Stream;
 use vennv\vapm\VapmPMMP;
 use function count;
 use function file;
 use function is_array;
+use function is_string;
 use function str_word_count;
 use function strlen;
 
@@ -22,10 +23,9 @@ class Counter {
 	/**
 	 * Get folder information for all files in a directory with a given extension.
 	 *
-	 * @param PluginBase $plugin  	The plugin to get the folder info for.
-	 * @param string $dir       	The directory to scan.
-	 * @param string $extension 	The file extension to filter by.
-	 * @return Async
+	 * @param PluginBase $plugin    The plugin to get the folder info for.
+	 * @param string     $dir       The directory to scan.
+	 * @param string     $extension The file extension to filter by.
 	 */
 	public static function getFolderInfo(PluginBase $plugin, string $dir, string $extension, bool $totalFilesT = true, bool $totalLinesT = true, bool $totalWordsT = true, bool $totalCharsT = true) : Async {
 		VapmPMMP::init($plugin);
@@ -39,7 +39,7 @@ class Counter {
 				);
 
 				$txtFiles = [];
-				
+
 				if ($totalFilesT) {
 					foreach ($files as $file) {
 
@@ -64,7 +64,7 @@ class Counter {
 								$totalLines += count($value);
 							}
 						}
-		
+
 						if ($totalWordsT || $totalChars) {
 
 							$content = Async::await(Stream::read($txtFile));
