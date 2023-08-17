@@ -12,7 +12,7 @@ class Hydrogen {
 	/**
 	 * Notify if an update is available on Poggit.
 	 */
-	public static function checkForUpdates(Plugin $plugin): void {
+	public static function checkForUpdates(Plugin $plugin) : void {
 		thebigcrafterHydrogen::checkForUpdates($plugin);
 	}
 }
