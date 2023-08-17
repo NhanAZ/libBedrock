@@ -75,17 +75,10 @@ This project is licensed under MIT. Please see the [LICENSE](/LICENSE) file for 
 
 - [Contributors](https://github.com/NhanAZ/libBedrock/graphs/contributors)
 - [pmmp/PocketMine-MP](https://github.com/pmmp/PocketMine-MP)
-	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/StringToItem.php
-	- https://github.com/NhanAZ/libBedrock/blob/master/SECURITY.md
-	- https://github.com/NhanAZ/libBedrock/blob/master/.github/PULL_REQUEST_TEMPLATE.md
-	- https://github.com/NhanAZ/libBedrock/blob/master/README.md
 - [thebigcrafter/ktpmpl-cfs](https://github.com/thebigcrafter/ktpmpl-cfs)
-	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/ConfigChecker.php
 - [jasonw4331/libCustomPack](https://github.com/jasonw4331/libCustomPack)
-	- https://github.com/NhanAZ/libBedrock/blob/master/src/NhanAZ/libBedrock/ResourcePackManager.php
 - [thebigcrafter/oh-my-pmmp](https://github.com/thebigcrafter/oh-my-pmmp)
-	- https://github.com/NhanAZ/libBedrock/blob/master/.github/workflows/ci.yml
-	
+- [thebigcrafter/Hydrogen](https://github.com/thebigcrafter/Hydrogen)
 - [PHPStan](https://github.com/phpstan/phpstan)
 - [PHP Coding Standards Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer)
 - [Visual Studio Code](https://code.visualstudio.com/)

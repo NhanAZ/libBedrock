@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbc6be3e1e995d13a63545d811c1377d",
+    "content-hash": "69db39de4ee2706cabf4a08b853920b9",
     "packages": [
         {
             "name": "adhocore/json-comment",
@@ -1245,6 +1245,56 @@
                 }
             ],
             "time": "2022-11-03T14:55:06+00:00"
+        },
+        {
+            "name": "thebigcrafter/hydrogen",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thebigcrafter/Hydrogen.git",
+                "reference": "c0222f8cefd715559eba25f137ba2331f5ca5ff3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thebigcrafter/Hydrogen/zipball/c0222f8cefd715559eba25f137ba2331f5ca5ff3",
+                "reference": "c0222f8cefd715559eba25f137ba2331f5ca5ff3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "pocketmine/pocketmine-mp": "^5.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.17",
+                "phpstan/phpstan": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "virion": {
+                    "spec": "3.0",
+                    "namespace-root": "thebigcrafter\\Hydrogen"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "thebigcrafter\\Hydrogen\\": "src/thebigcrafter/Hydrogen"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "thebigcrafter"
+                }
+            ],
+            "description": "A library that provides common functionality for the plugins of thebigcrafter",
+            "support": {
+                "issues": "https://github.com/thebigcrafter/Hydrogen/issues",
+                "source": "https://github.com/thebigcrafter/Hydrogen/tree/v1.0.0"
+            },
+            "time": "2023-06-09T00:45:43+00:00"
         }
     ],
     "packages-dev": [
