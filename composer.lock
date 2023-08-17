@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69db39de4ee2706cabf4a08b853920b9",
+    "content-hash": "81a752c79f9fd64abda8589f6aa88968",
     "packages": [
         {
             "name": "adhocore/json-comment",
@@ -1295,6 +1295,21 @@
                 "source": "https://github.com/thebigcrafter/Hydrogen/tree/v1.0.0"
             },
             "time": "2023-06-09T00:45:43+00:00"
+        },
+        {
+            "name": "venndev/libvapmpmmp",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/VennDev/LibVapmPMMP",
+                "reference": "main"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            }
         }
     ],
     "packages-dev": [
@@ -3162,7 +3177,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "venndev/libvapmpmmp": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -5,12 +5,32 @@
     "license": "MIT",
     "require": {
         "pocketmine/pocketmine-mp": "^5.0.0",
-        "thebigcrafter/hydrogen": "^1.0.0"
+        "thebigcrafter/hydrogen": "^1.0.0",
+        "venndev/libvapmpmmp": "dev-main"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10.18",
         "friendsofphp/php-cs-fixer": "^3.17.0"
     },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "venndev/libvapmpmmp",
+                "version": "dev-main",
+                "autoload": {
+                    "classmap": [
+                        "src/"
+                    ]
+                },
+                "source": {
+                    "url": "https://github.com/VennDev/LibVapmPMMP",
+                    "type": "git",
+                    "reference": "main"
+                }
+            }
+        }
+    ],
     "autoload": {
         "classmap": [
             "src"
