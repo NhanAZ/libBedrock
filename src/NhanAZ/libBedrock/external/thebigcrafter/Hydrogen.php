@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NhanAZ\external\thebigcrafter;
+namespace NhanAZ\libBedrock\external\thebigcrafter;
 
 use pocketmine\plugin\Plugin;
 use thebigcrafter\Hydrogen\Hydrogen as thebigcrafterHydrogen;
