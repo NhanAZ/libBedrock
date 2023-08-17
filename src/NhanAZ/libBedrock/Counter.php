@@ -21,7 +21,7 @@ class Counter {
 	 * @param string $extension The file extension to filter by.
 	 * @return array{"totalFiles": int, "totalLines": int, "totalWords": int, "totalChars": int} An array of file information.
 	 */
-	public static function getFolderInfo(string $dir, string $extension, bool $totalFilesT = true, bool $totalLinesT = true, bool $totalWordsT = true, bool $totalCharsT = true): array {
+	public static function getFolderInfo(string $dir, string $extension, bool $totalFilesT = true, bool $totalLinesT = true, bool $totalWordsT = true, bool $totalCharsT = true) : array {
 		$files = new \RecursiveIteratorIterator(
 			iterator: new \RecursiveDirectoryIterator($dir),
 			mode: \RecursiveIteratorIterator::CHILD_FIRST
