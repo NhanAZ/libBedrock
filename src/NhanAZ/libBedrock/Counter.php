@@ -38,7 +38,7 @@ class Counter {
 		$totalLines = 0;
 		$totalWords = 0;
 		$totalChars = 0;
-		if ($totalLinesT || $totalWords || $totalCharsT) {
+		if ($totalLinesT || $totalWordsT || $totalCharsT) {
 			foreach ($txtFiles as $txtFile) {
 				if ($totalLinesT) {
 					$value = file($txtFile);
