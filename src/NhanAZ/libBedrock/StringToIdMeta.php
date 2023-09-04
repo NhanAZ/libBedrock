@@ -1090,6 +1090,8 @@ define('Item Record 11 (20182:0)x1', '510:0');
 define('Item Record Wait (20192:0)x1', '511:0');
 
 /**
+ * @deprecated
+ *
  * This class provides a method to parse a string to an array of id and meta values.
  *
  * The `parse()` method takes a string as input and returns an array with the following keys:
@@ -1102,6 +1104,8 @@ define('Item Record Wait (20192:0)x1', '511:0');
 class StringToIdMeta {
 
 	/**
+	 * @deprecated
+	 *
 	 * Parses a string to an array of id and meta values.
 	 *
 	 * @param string $string The string to parse.
@@ -1110,7 +1114,7 @@ class StringToIdMeta {
 	 *
 	 * @throws libBedrockUnexpectedValueException If the string cannot be parsed.
 	 */
-	public static function parse(string $string) : array {
+	public static function parse(string $string): array {
 		if ($string == 'Item Written Book (20227:0)x1 tags:0xCgAAAwoAZ2VuZXJhdGlvbgAAAAAIBgBhdXRob3IAAAgFAHRpdGxlAAAA') {
 			$string = "387:0";
 		}
