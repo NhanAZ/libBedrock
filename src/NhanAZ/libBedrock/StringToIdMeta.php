@@ -1114,7 +1114,7 @@ class StringToIdMeta {
 	 *
 	 * @throws libBedrockUnexpectedValueException If the string cannot be parsed.
 	 */
-	public static function parse(string $string): array {
+	public static function parse(string $string) : array {
 		if ($string == 'Item Written Book (20227:0)x1 tags:0xCgAAAwoAZ2VuZXJhdGlvbgAAAAAIBgBhdXRob3IAAAgFAHRpdGxlAAAA') {
 			$string = "387:0";
 		}
