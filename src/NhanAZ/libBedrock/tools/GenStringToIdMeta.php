@@ -20,7 +20,7 @@ class GenStringToIdMeta {
 
 	public static function start() : void {
 		$arr = [];
-		$file = fopen('C:\Users\NhanAZ\Downloads\PocketMine-MP\virions\libBedrock\src\NhanAZ\libBedrock\StringToIdMeta.php', "w");
+		$file = fopen("D:/PocketMine-MP/virions/libBedrock/src\NhanAZ/libBedrock/StringToIdMeta.php", "w");
 		if ($file == false) return;
 		$data =
 			<<<'EOF'
