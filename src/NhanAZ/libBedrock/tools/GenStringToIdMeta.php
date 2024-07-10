@@ -20,7 +20,7 @@ class GenStringToIdMeta {
 
 	public static function start() : void {
 		$arr = [];
-		$file = fopen("D:/PocketMine-MP/virions/libBedrock/src\NhanAZ/libBedrock/StringToIdMeta.php", "w");
+		$file = fopen('C:\Users\NhanAZ\Downloads\PocketMine-MP\virions\libBedrock\src\NhanAZ\libBedrock\StringToIdMeta.php', "w");
 		if ($file == false) return;
 		$data =
 			<<<'EOF'
@@ -64,6 +64,8 @@ EOF;
 			<<<'EOF'
 
 /**
+ * @deprecated
+ *
  * This class provides a method to parse a string to an array of id and meta values.
  *
  * The `parse()` method takes a string as input and returns an array with the following keys:
@@ -76,6 +78,8 @@ EOF;
 class StringToIdMeta {
 
 	/**
+	 * @deprecated
+	 *
 	 * Parses a string to an array of id and meta values.
 	 *
 	 * @param string $string The string to parse.
@@ -85,6 +89,16 @@ class StringToIdMeta {
 	 * @throws libBedrockUnexpectedValueException If the string cannot be parsed.
 	 */
 	public static function parse(string $string) : array {
+		if ($string == 'Item Written Book (20227:0)x1 tags:0xCgAAAwoAZ2VuZXJhdGlvbgAAAAAIBgBhdXRob3IAAAgFAHRpdGxlAAAA') {
+			$string = "387:0";
+		}
+		$string = preg_replace('/tags:.*/', '', $string);
+		if (!is_string($string)) {
+			throw new libBedrockUnexpectedValueException();
+		}
+		$string = rtrim($string);
+		$string = substr($string, 0, -2) . "1";
+		$string = rtrim($string);
 		$idMeta = constant($string);
 		if (!is_string($idMeta)) {
 			throw new libBedrockUnexpectedValueException();
@@ -96,6 +110,7 @@ class StringToIdMeta {
 		];
 	}
 }
+
 
 EOF;
 		fwrite($file, $data);
